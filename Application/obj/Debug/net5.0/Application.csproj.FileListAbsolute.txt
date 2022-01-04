@@ -1,0 +1,17 @@
+C:\CodeGram\Application\bin\Debug\net5.0\Application.deps.json
+C:\CodeGram\Application\bin\Debug\net5.0\Application.dll
+C:\CodeGram\Application\bin\Debug\net5.0\ref\Application.dll
+C:\CodeGram\Application\bin\Debug\net5.0\Application.pdb
+C:\CodeGram\Application\bin\Debug\net5.0\Domain.dll
+C:\CodeGram\Application\bin\Debug\net5.0\Persistance.dll
+C:\CodeGram\Application\bin\Debug\net5.0\Persistance.pdb
+C:\CodeGram\Application\bin\Debug\net5.0\Domain.pdb
+C:\CodeGram\Application\obj\Debug\net5.0\Application.csproj.AssemblyReference.cache
+C:\CodeGram\Application\obj\Debug\net5.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeGram\Application\obj\Debug\net5.0\Application.AssemblyInfoInputs.cache
+C:\CodeGram\Application\obj\Debug\net5.0\Application.AssemblyInfo.cs
+C:\CodeGram\Application\obj\Debug\net5.0\Application.csproj.CoreCompileInputs.cache
+C:\CodeGram\Application\obj\Debug\net5.0\Application.csproj.CopyComplete
+C:\CodeGram\Application\obj\Debug\net5.0\Application.dll
+C:\CodeGram\Application\obj\Debug\net5.0\ref\Application.dll
+C:\CodeGram\Application\obj\Debug\net5.0\Application.pdb

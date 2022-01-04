@@ -1,0 +1,12 @@
+C:\CodeGram\Domain\bin\Debug\net5.0\Domain.deps.json
+C:\CodeGram\Domain\bin\Debug\net5.0\Domain.dll
+C:\CodeGram\Domain\bin\Debug\net5.0\ref\Domain.dll
+C:\CodeGram\Domain\bin\Debug\net5.0\Domain.pdb
+C:\CodeGram\Domain\obj\Debug\net5.0\Domain.csproj.AssemblyReference.cache
+C:\CodeGram\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeGram\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+C:\CodeGram\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+C:\CodeGram\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+C:\CodeGram\Domain\obj\Debug\net5.0\Domain.dll
+C:\CodeGram\Domain\obj\Debug\net5.0\ref\Domain.dll
+C:\CodeGram\Domain\obj\Debug\net5.0\Domain.pdb
