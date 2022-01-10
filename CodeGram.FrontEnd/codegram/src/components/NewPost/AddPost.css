@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.add__post {
+  width: 32rem;
+  margin: 1rem auto;
+  text-align: center;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.add__post:hover {
+  transform: scale(1.02);
+  color: #5e81ac;
+}
+
+.post__form {
+  width: 33rem;
+  margin: 0 auto;
+}

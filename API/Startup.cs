@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
 using API.Extensions;
@@ -19,6 +20,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Persistance;
 using Persistance.Abstractions;
+using Persistance.Middlewares;
 using Persistance.Services;
 
 namespace API
@@ -47,7 +49,14 @@ namespace API
                 blobClient.CreateIfNotExists(PublicAccessType.BlobContainer);
                 return blobClient;
             });
-            
+            services.AddSingleton(x =>
+            {
+                var keys = Configuration.GetConnectionString("BlobStorage").Split(";") as IEnumerable<string>;
+                var accountName = keys.First(x => x.StartsWith("AccountName"));
+                var valueAccountName = accountName.Split("=")[1];
+                return new BlobService { BlobImagesUri = $"https://{valueAccountName}.blob.core.windows.net/images-container" };
+            });
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -61,14 +70,22 @@ namespace API
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseCors(o =>
+                {
+                    o.WithOrigins("http://localhost:3000").AllowAnyMethod().AllowAnyHeader().AllowCredentials().WithExposedHeaders("*");
+                });
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1"));
             }
+
+            app.UseMiddleware<ExceptionHandler>();
 
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
+            app.UseAuthentication();
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

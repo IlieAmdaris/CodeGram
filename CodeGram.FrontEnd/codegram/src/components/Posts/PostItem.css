@@ -1,0 +1,60 @@
+.post {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.2s ease-in-out;
+  width: 30rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.tag {
+  font-size: 0.7rem;
+}
+
+.date,
+.location,
+.location-icon {
+  font-size: 0.7rem;
+}
+
+.python {
+  color: #3572a5;
+}
+
+.javaScript {
+  color: #f1e05a;
+}
+
+.java {
+  color: #b07219;
+}
+
+.c\# {
+  color: #178600;
+}
+
+.c {
+  color: #555555;
+}
+
+.c\+\+ {
+  color: #f34b7d;
+}
+
+.go {
+  color: #00add8;
+}
+
+.r {
+  color: #198ce7;
+}
+
+.swift {
+  color: #f05138;
+}
+
+.php {
+  color: #4f5d95;
+}
